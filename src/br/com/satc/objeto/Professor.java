@@ -20,6 +20,11 @@ public class  Professor extends Pessoa {
     private float valorHora;
     private float salario;
 
+    @Override
+    public String toString() {
+        return "Professor{" + "diciplinas=" + diciplinas + ", cargaHoraria=" + cargaHoraria + ", valorHora=" + valorHora + ", salario=" + salario + '}';
+    }
+
     
 
     public Professor(Integer cargaHoraria, float valorHora, String nome, String rg, String cpf, Date dataNascimento, Integer idade) {

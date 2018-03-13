@@ -18,6 +18,11 @@ public class Aluno extends Pessoa {
     private Date dataMatricula;
  private ArrayList<Disciplina> disciplinas  = new ArrayList<Disciplina> ();
 
+    @Override
+    public String toString() {
+        return "Aluno{" + "matricula=" + matricula + ", dataMatricula=" + dataMatricula + ", disciplinas=" + disciplinas + '}';
+    }
+
     public Integer getMatricula() {
         return matricula;
     }
