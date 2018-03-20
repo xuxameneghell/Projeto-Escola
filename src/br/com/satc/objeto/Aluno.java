@@ -47,8 +47,8 @@ public class Aluno extends Pessoa {
         this.disciplinas = disciplinas;
     }
 
-    public Aluno(Integer matricula, Date dataMatricula, String nome, String rg, String cpf, Date dataNascimento, Integer idade) {
-        super(nome, rg, cpf, dataNascimento, idade);
+    public Aluno(Integer matricula, Date dataMatricula, String nome, String rg, String cpf, Date dataNascimento) {
+        super(nome, rg, cpf, dataNascimento);
         this.matricula = matricula;
         this.dataMatricula = dataMatricula;
     }

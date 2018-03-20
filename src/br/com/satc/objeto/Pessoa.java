@@ -18,6 +18,12 @@ public abstract class Pessoa {
     private String cpf;
     private Date dataNascimento;
     private int idade;
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", rg=" + rg + ", cpf=" + cpf + ", dataNascimento=" + dataNascimento + ", idade=" + idade + '}';
+    }
+    
 public static int calculaIdade(java.util.Date dataNasc) {
 
     Calendar dataNascimento = Calendar.getInstance();  
