@@ -36,7 +36,10 @@ public class Projeto_Escola {
             +"1. Cadastro Disciplinas\n"
             +"2.Cadastro de alunos \n"
             +"3.cadastro professores\n"
-           +"4. sair /n"));
+           +"4. Disciplinas Cadastradas \n  "
+           +"5. Alunos Cadastrados \n"
+           + "6. Professores Cadastrados \n"       
+           + "7. sair /n"));
        switch(escMenu){
            case 1 :{
                do{
@@ -70,13 +73,8 @@ public class Projeto_Escola {
            }
            break;
            }
-       
-           
-           
            case 3 : {
-               
-           
-           String nomeProfessor= JOptionPane.showInputDialog("Informe o nome do professor");
+           String nomeProfessor = JOptionPane.showInputDialog("Informe o nome do professor");
         int cargaHoraria =Integer.parseInt(JOptionPane.showInputDialog("Informe a acarga horaria"));
         float valorHora = Float.parseFloat(JOptionPane.showInputDialog("Informe o valor da hora"));
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -100,20 +98,31 @@ public class Projeto_Escola {
         }
            break;
            }
+           
+           case 4: {
+             int disciplinasCadastradas = Integer.parseInt(JOptionPane.showInputDialog("Qual disciplina voce quer consultar ? "));  
+             materias.get(disciplinasCadastradas);
+             JOptionPane.showMessageDialog(null,materias.toString());     
+             break;
        }
        
-      
-       }while(escMenu!=4);
-
-           }
+           case 5: {
+             int AlunosCadastrados = Integer.parseInt(JOptionPane.showInputDialog("Qual aluno voce quer consultar ? "));  
+             alunolist.get(AlunosCadastrados);
+             JOptionPane.showMessageDialog(null,alunolist.toString());
+             break;
+       }
+       case 6: {
+             int ProfessoresCadastrados = Integer.parseInt(JOptionPane.showInputDialog("Qual professor voce quer consultar ? "));  
+             listProfessor.get(ProfessoresCadastrados);
+             JOptionPane.showMessageDialog(null,listProfessor.toString());
+             break;
        
        }
-       
-               
-      
-      
-       
-       
+       }
+       }while(escMenu!=7);
+    }
+}
        
        
        
